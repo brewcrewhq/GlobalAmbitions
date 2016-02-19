@@ -1,0 +1,47 @@
+<template name="login">
+    <div class="container">
+    <div class="row" id="pwd-container">
+      <div class="col-md-2"></div>
+      <div class="col-md-6">
+        <section class="login-form">
+          <form method="post" action="#" role="login">
+            <div class="loginLogo">
+              <img src="/images/icons/gaLogo.gif" class="img-responsive" alt="" /><h2>Global Ambitions</h2>
+            </div>
+            <input type="email" name="login-email" id="login-email" placeholder="email" required class="form-control input-lg" value="" />
+            <input type="password" name="login-password" id="login-password" placeholder="password" class="form-control input-lg" required="" />
+            <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Login</button>
+            <div>
+              <a href="/register">Create an account</a> or <a href="#">I forgot my password</a>
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</template>
+
+<template name="register">
+  <div class="container">
+    <div class="row" id="pwd-container">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <section class="login-form">
+          <form method="post" action="#" role="login">
+            <div class="loginLogo">
+              <img src="/images/icons/gaLogo.gif" class="img-responsive" alt="" /><h2>Global Ambitions</h2>
+            </div>
+            <input type="email" name="login-email" id="email" placeholder="email" required class="form-control input-lg" value="" />
+            <input type="password" name="login-password" id="password" placeholder="password" class="form-control input-lg" required="" />
+            <button type="submit" name="go" class="btn btn-lg btn-primary btn-block">Create Account</button>
+            <div>
+              <a href="/login">Login</a> or <a href="#">I forgot my password</a>
+            </div>
+          </form>
+        </section>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</template>

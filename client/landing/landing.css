@@ -1,0 +1,37 @@
+section {
+  padding: 5% 0;
+}
+
+.shirt-carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.link-p{
+  display: block;
+  min-height: 250px;
+  /*height: auto;*/
+  /*width: 100%;*/
+  max-width: 100%;
+  /*margin-right: auto;*/
+  /*margin-left: auto;*/
+  background-color: white;
+}
+
+.def-img{
+  position: inherit!important;
+  width: auto!important;
+  height: inherit!important;
+  max-width: inherit!important;
+  max-height: inherit!important;
+  left: inherit!important;
+  top: inherit!important;
+}
+
+#contactUs th {
+  width: 50%;
+}
+#contactUs td {
+  font-size: 13px;
+}
+
