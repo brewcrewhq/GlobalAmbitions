@@ -27,3 +27,5 @@ zimme:active-route
 email
 check
 fortawesome:fontawesome
+cfs:standard-packages
+cfs:gridfs

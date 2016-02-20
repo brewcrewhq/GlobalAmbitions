@@ -1,6 +1,11 @@
 /**
  * Created by Brew on 12/23/2015.
  */
+FlowRouter.subscriptions = function() {
+  this.register('products', Meteor.subscribe('products'));
+  this.register('images', Meteor.subscribe('images'));
+};
+
 var exposed = FlowRouter.group({});
 var loggedIn = FlowRouter.group({
   triggersEnter: [function(){
@@ -37,6 +42,7 @@ loggedIn.route('/message', {
 exposed.route('/', {
   name: 'landing',
   action: function(){
+    //BlazeLayout.render('layout', {content: 'create'});
     BlazeLayout.render('layout', {content: 'landing'});
   }
 });

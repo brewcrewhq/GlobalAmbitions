@@ -10,11 +10,11 @@ section {
 .link-p{
   display: block;
   min-height: 250px;
-  /*height: auto;*/
-  /*width: 100%;*/
+  height: auto;
+  width: 100%;
   max-width: 100%;
-  /*margin-right: auto;*/
-  /*margin-left: auto;*/
+  margin-right: auto;
+  margin-left: auto;
   background-color: white;
 }
 

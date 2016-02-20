@@ -1,0 +1,36 @@
+<template name="productList">
+
+    {{#each products}}
+      {{> productRow }}
+    {{/each}}
+
+</template>
+
+<template name="productRow">
+  <div class="row">
+  {{#each row }}
+    {{> productView}}
+  {{/each}}
+  </div>
+</template>
+
+<template name="productView">
+  <div class="col-sm-4 text-center">
+    <div class="thumbnail">
+      <a href="#">
+        <!--<img src="{{this.imagePath}}" alt="{{this.imgAlt}}" class="def-img" style="position: absolute; width: 250px; height: auto; max-width: none; max-height: none; left: -25px; top: 0px;" />-->
+        <img src="{{this.imagePath}}" alt="{{this.imgAlt}}" class="link-p" />
+      </a>
+      <div class="caption prod-caption">
+        <h4><a href="#">{{this.type}}</a></h4>
+        <p>{{this.description}}</p>
+        <p></p>
+        <div class="btn-group">
+          <a href="#" class="btn btn-default">$ {{this.price}}.00</a>
+          <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Buy</a>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </div>
+</template>
