@@ -15,8 +15,8 @@ if(Meteor.isClient){
       delete Session.keys.redirectAfterLogin;
       // In your client code: asynchronously send an email
       Meteor.call('sendEmail',
-        'larrykentbrewer@gmail.com',
-        //'carlosacontreras@icloud.com',
+        //'larrykentbrewer@gmail.com',
+        'carlosacontreras@icloud.com',
         Meteor.user().emails[0].address,
         'Message from Global Ambitions.',
         template.find('#message').value
