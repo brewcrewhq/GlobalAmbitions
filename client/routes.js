@@ -38,6 +38,13 @@ loggedIn.route('/message', {
   }
 });
 
+loggedIn.route('/create', {
+  name: 'create',
+  action: function() {
+    BlazeLayout.render('layout', {content: 'createProduct'})
+  }
+});
+
 // Exposed Routes
 exposed.route('/', {
   name: 'landing',

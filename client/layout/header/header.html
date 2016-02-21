@@ -15,7 +15,19 @@
           <li class="{{isActiveRoute 'landing'}}"><a href="/"><i class="fa fa-home"></i> Home</a></li>
           <li class="{{isActiveRoute 'contact'}}"><a href="/message"><i class="fa fa-keyboard-o"></i> Message</a></li>
           {{#if currentUser}}
-            <li class="{{isActiveRoute 'logout'}}"><a href="/logout"><i class="fa fa-power-off"></i> logout</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="height: 50px; border-style: hidden; border-radius: 0;">
+                    <span class="pull-left"> {{currentUser.emails.[0].address}} <span class="caret"></span></span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+                    {{#if isInRole 'admin'}}
+                      <li><a href="/create"><i class="fa fa-plus"></i> Create Product</a></li>
+                    {{/if}}
+                  </ul>
+                </div>
+              </li>
           {{else}}
             <li class="{{isActiveRoute 'login'}}"><a href="/login"><i class="fa fa-user"></i> Login</a></li>
           {{/if}}

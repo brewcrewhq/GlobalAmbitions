@@ -29,3 +29,4 @@ check
 fortawesome:fontawesome
 cfs:standard-packages
 cfs:gridfs
+peppelg:bootstrap-3-modal

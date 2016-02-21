@@ -1,7 +1,7 @@
 /**
  * Created by Brew on 2/19/2016.
  */
-Template.createProduct.events({
+Template.modalCreateProduct.events({
   'submit form': function(event, template){
     // prevent the form from actually posting
     event.preventDefault();
@@ -28,18 +28,18 @@ Template.createProduct.events({
             'category': categoryVal,
             'header': headerVal,
             'description': descriptionVal,
-            'price': priceVal}, function(err, product){
+            'price': priceVal,
+            'newRecord': false}, function(err, product){
             if(err){
               console.log(err);
             } else {
               console.log(product);
-              // Clear the existing form maybe
-              FlowRouter.redirect('/');
             }
+            FlowRouter.go('/');
           });
         }
       });
     }
+
   }
 });
-

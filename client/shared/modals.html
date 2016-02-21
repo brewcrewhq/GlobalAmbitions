@@ -1,0 +1,51 @@
+<template name="modalCreateProduct">
+  <div class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h4 class="modal-title">Crate a new product.</h4>
+        </div>
+
+        <div class="modal-body">
+          <section class="login-form" style="padding: 0; margin: 0;">
+            <form method="post" action="#" role="login">
+              <div class="row">
+                <div class="col-sm-12">
+                  <input type="file" name="productImage" id="productImage" class="productImage form-control-file" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9">
+                  <input type="text" name="productAlt" id="productAlt" placeholder="Hover Text" required class="form-control">
+                </div>
+                <div class="col-sm-3">
+                  <input type="number" name="productPrice" id="productPrice" placeholder="Price" required class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-9">
+                  <input type="text" name="productHeader" id="productHeader" placeholder="Header" required class="form-control">
+                </div>
+                <div class="col-sm-3">
+                  <input type="text" name="productCategory" id="productCategory" placeholder="Category" required class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <textarea placeholder="Description of this product" cols="15" rows="3" name="productDescription" id="productDescription" required class="form-control"></textarea>
+                </div>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block"><i class="fa fa-plus"></i> Create Product</button>
+            </form>
+          </section>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>

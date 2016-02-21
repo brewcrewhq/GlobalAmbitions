@@ -3,7 +3,7 @@
  */
 Template.productList.helpers({
   products: function(){
-    var all = Products.find({}).fetch();
+    var all = Products.find().fetch();
     var chunks = [];
     var size = 3;
     while (all.length > size) {
@@ -13,6 +13,5 @@ Template.productList.helpers({
     chunks.push({row: all});
     return chunks;
 
-    //return Products.find();
   }
 });
